@@ -1,9 +1,9 @@
 # LaFriseEIP
 
-Setup
+Setup 
 -----
 
-npm install in root folder
+npm install
 
 Run
 ------
