@@ -1,0 +1,22 @@
+{
+  "name": "lafriseeip",
+  "version": "1.0.0",
+  "description": "La Frise projet EIP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lafriseeip/LaFriseEIP.git"
+  },
+  "author": "Dylan DINH , François GAYRAUD , Marko MITROVIC , Rémi Lak , Paul BELLOC , Agassi WONG, Clément XIA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lafriseeip/LaFriseEIP/issues"
+  },
+  "homepage": "https://github.com/lafriseeip/LaFriseEIP#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
