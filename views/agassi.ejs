@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>La Frise</title>
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="/stylesheets/style_agassi.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+        var num = 0;
+
+        var date_article = 1994; //ICI VOUS METTEZ LA DATE DE L'ARTICLE OU LE TITRE PAR EXEMPLE DEPUIS LA BASE DE DONNEE
+        var contenu_article = "EXEMPLE CONTENU"; //ICI LE CONTENUE D'EXEMPLE DEPUIS LA BASE DE DONNEE
+
+        $(document).ready(function(){
+            $("#btn2").click(function() {
+                if (num % 2 == 0) {
+                    $("#container").append("<div class='container right'><div class='content'><h2>" + date_article + "</h2><p>"+ contenu_article +"</p></div></div>");
+                }
+                else {
+                    $("#container").append("<div class='container left'><div class='content'><h2>" + date_article + "</h2><p>"+ contenu_article +"</p></div></div>");
+                }
+                num = num + 1;
+            });
+        });
+        </script>
+    </head>
+
+    <body>
+
+    <div class="frame-logo">
+        <img class="style-logo" src="logo_opaque.png" alt="Logo">
+    </div>
+    <button id="btn2">AJOUTER DU CONTENUE DE TEST</button>
+
+    <div id="container" class="timeline">
+
+        <!-- AFFICHAGE DE TEST -->
+        <div class="container left">
+            <div class="content">
+                <h2>11111</h2>
+                <p>Lorem ipsum dolor sit ames ea eam.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>22222</h2>
+                <p>Lorem ipsum dolor sit ames ea eam.</p>
+            </div>
+        </div>
+
+        <div class="container left"><div class="content"><h2>11111</h2><p>Lorem ipsum dolor sit ames ea eam.</p></div></div>
+
+    </div>
+
+</body>
+
+</html>
